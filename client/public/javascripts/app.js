@@ -102,7 +102,6 @@ module.exports = {
     }
   }
 };
-
 });
 
 ;require.register("initialize", function(exports, require, module) {
@@ -114,7 +113,6 @@ $(function() {
   require('lib/app_helpers');
   return app.initialize();
 });
-
 });
 
 ;require.register("lib/app_helpers", function(exports, require, module) {
@@ -132,7 +130,6 @@ $(function() {
     return _results;
   })();
 })();
-
 });
 
 ;require.register("lib/base_view", function(exports, require, module) {
@@ -179,7 +176,6 @@ module.exports = BaseView = (function(_super) {
   return BaseView;
 
 })(Backbone.View);
-
 });
 
 ;require.register("lib/view_collection", function(exports, require, module) {
@@ -288,7 +284,6 @@ module.exports = ViewCollection = (function(_super) {
   return ViewCollection;
 
 })(BaseView);
-
 });
 
 ;require.register("router", function(exports, require, module) {
@@ -318,7 +313,6 @@ module.exports = Router = (function(_super) {
   return Router;
 
 })(Backbone.Router);
-
 });
 
 ;require.register("views/app_view", function(exports, require, module) {
@@ -346,7 +340,6 @@ module.exports = AppView = (function(_super) {
   return AppView;
 
 })(BaseView);
-
 });
 
 ;require.register("views/templates/home", function(exports, require, module) {
@@ -369,3 +362,4 @@ if (typeof define === 'function' && define.amd) {
 });
 
 ;
+//# sourceMappingURL=app.js.map
