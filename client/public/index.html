@@ -36,6 +36,41 @@
                 height:20px;
                 opacity: 0.7;
             }
+            #toBilanConso_btn{
+                top:50px;
+                left: 250px;
+            }
+            #to-autorisation-nest{
+                background: blue;
+                color: white;
+                top:150px;
+                left: 50px;
+                width: 200px;
+                height:20px;
+                opacity: 0.7;
+            }
+            #to-bilanconso-avec-nest{
+                background: blue;
+                color: white;
+                top:150px;
+                left: 50px;
+                width: 200px;
+                height:20px;
+                opacity: 0.7;
+            }
+            #to-simulation{
+                background: blue;
+                color: white;
+                top:150px;
+                left: 50px;
+                width: 200px;
+                height:60px;
+                /*opacity: 0.7;*/
+                background: url('backgrounds/12-simulation-menu-simulation.png');
+            }
+            #to-simulation:hover{
+                background: url('backgrounds/12-simulation-menu-simulation-hover.png');
+            }
             #div_btn1:hover{
                 background: red;
                 cursor: pointer;
@@ -49,25 +84,42 @@
 <![endif]-->
 
 
-
-        <div id="accueil" class="screen" >
+        <!-- <div id="accueil" class="screen" >
             <map name="accueil">
                 <area shape="rect" coords="236,442,256,462" onClick="show('factures_et_conso')" title="Factures" alt="Factures" href="#"/>
             </map>
             <img id="accueil" src="backgrounds/acceuil-edf.png" usemap="#accueil"></img>
             <button id="btn1" class="floatting_btn" onClick="show('factures_et_conso')">btn</button>
+        </div> -->
+
+
+        <div id="4-facture" class="screen" style="display:none">
+            <img  src="backgrounds/4-facture.png" ></img>
+            <a id="toBilanConso_btn" class="floatting_btn" href="#6-BilanConso">Total TTC 29,37€</a>
         </div>
 
 
-
-        <div id="factures_et_conso" class="screen" style="display:none">
-            <map name="factures_et_conso">
-                <area shape="rect" coords="210,120,510,180" onClick="show('accueil')" title="Accueil" alt="Accueil"  href="#"/>
-            </map>
-            <img  src="backgrounds/factures-et-conso-edf.png" usemap="#factures_et_conso" ></img>
-            <div id="div_btn1" class="div_btn" onClick="show('accueil')"></div>
+        <div id="6-BilanConso" class="screen" style="display:none">
+            <img  src="backgrounds/6-BilanConso.png" usemap="#6-BilanConso" ></img>
+            <a id="to-autorisation-nest" class="floatting_btn" href="#8-autorisation-nest"></a>
         </div>
 
+
+        <div id="8-autorisation-nest" class="screen" style="display:none">
+            <img  src="backgrounds/8-autorisation-nest.png" ></img>
+            <a id="to-bilanconso-avec-nest" class="floatting_btn" href="#10-bilan-conso-avec-nest"></a>
+        </div>
+
+
+        <div id="10-bilan-conso-avec-nest" class="screen" style="display:none">
+            <img  src="backgrounds/10-bilan-conso-avec-nest.png"></img>
+            <a id="to-simulation" class="floatting_btn" href="#12-simulation-budget-chauffage"></a>
+        </div>
+
+
+        <div id="12-simulation-budget-chauffage" class="screen" style="display:none">
+            <img  src="backgrounds/12-simulation-budget-chauffage.png"></img>
+        </div>
 
 
         <script type="text/javascript">
@@ -82,6 +134,18 @@
                     }
                 }
             }
+            hash = location.hash;
+            if (hash == ""){
+                location.hash = "4-facture";
+                show("4-facture");
+
+            } else {
+                show(hash.substr(1));
+            }
+            window.onhashchange = function () {
+                show(location.hash.substr(1));
+            }
+
         </script>
 
 
