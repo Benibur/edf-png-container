@@ -37,40 +37,82 @@
                 opacity: 0.7;
             }
             #toBilanConso_btn{
-                top:50px;
-                left: 250px;
+                top:545px;
+                left: 822px;
+                color: white;
+                font-size: 20px;
+            }
+            #toBilanConso_btn p{
+                /*top:48;*/
+                font-size: 26px;
+                font-weight: bold;
             }
             #to-autorisation-nest{
-                background: blue;
+                /*background: blue;*/
                 color: white;
-                top:150px;
-                left: 50px;
-                width: 200px;
-                height:20px;
-                opacity: 0.7;
+                top:356px;
+                left: 1110px;
+                width: 73px;
+                height:40px;
+                opacity: 1;
             }
+            #to-autorisation-nest:hover{
+                border-bottom: 3px solid #00b6de;
+            }
+            #to-autorisation-netatmo{
+                /*background: blue;*/
+                color: white;
+                top:306px;
+                left: 1110px;
+                width: 76px;
+                height:40px;
+                opacity: 1;
+            }
+            #to-autorisation-netatmo:hover{
+                border-bottom: 3px solid #58919a;
+            }
+            #to-autorisation-wihings{
+                /*background: blue;*/
+                color: white;
+                top:238px;
+                left: 1098px;
+                width: 105px;
+                height:40px;
+                opacity: 1;
+            }
+            #to-autorisation-wihings:hover{
+                border-bottom: 3px solid #000;
+            }
+
             #to-bilanconso-avec-nest{
-                background: blue;
+                /*background: blue;*/
                 color: white;
-                top:150px;
-                left: 50px;
-                width: 200px;
-                height:20px;
-                opacity: 0.7;
+                top:597px;
+                left: 610px;
+                width: 30px;
+                height:18px;
+                opacity: 1;
             }
+            #to-bilanconso-avec-nest:hover{
+                border-bottom: 2px solid #fff;
+            }
+
             #to-simulation{
-                background: blue;
+                /*background: blue;*/
                 color: white;
-                top:150px;
-                left: 50px;
-                width: 200px;
-                height:60px;
+                top:644px;
+                left: 18px;
+                width: 169px;
+                height:55px;
+                background-size:auto auto;
+                background-repeat: no;
                 /*opacity: 0.7;*/
                 background: url('backgrounds/12-simulation-menu-simulation.png');
             }
             #to-simulation:hover{
                 background: url('backgrounds/12-simulation-menu-simulation-hover.png');
             }
+
             #div_btn1:hover{
                 background: red;
                 cursor: pointer;
@@ -95,13 +137,15 @@
 
         <div id="4-facture" class="screen" style="display:none">
             <img  src="backgrounds/4-facture.png" ></img>
-            <a id="toBilanConso_btn" class="floatting_btn" href="#6-BilanConso">Total TTC 29,37€</a>
+            <a id="toBilanConso_btn" class="floatting_btn" href="#6-BilanConso">Total TTC<p>29,37€</p></a>
         </div>
 
 
         <div id="6-BilanConso" class="screen" style="display:none">
             <img  src="backgrounds/6-BilanConso.png" usemap="#6-BilanConso" ></img>
             <a id="to-autorisation-nest" class="floatting_btn" href="#8-autorisation-nest"></a>
+            <a id="to-autorisation-netatmo" class="floatting_btn" href="#8-autorisation-nest"></a>
+            <a id="to-autorisation-wihings" class="floatting_btn" href="#8-autorisation-nest"></a>
         </div>
 
 
