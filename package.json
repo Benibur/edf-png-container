@@ -5,6 +5,8 @@
     "node = 0.10.x"
   ],
   "description": "Votre compte EDF augmenté!",
+  "icon-path": "client/app/assets/icons/main_icon.png",
+  "cozy-color": "",
   "license": "MIT",
   "repository": {
     "type": "git",
